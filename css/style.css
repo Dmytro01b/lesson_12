@@ -1,0 +1,229 @@
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	background-color: rgb(180, 180, 180);
+}
+
+[class*="__container"] {
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 20px;
+}
+
+
+.block__text {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	font-size: 24px;
+	font-weight: 700;
+	font-family: "Lato";
+	color: #000;
+}
+
+
+.block__body {
+	background: rgba(217, 209, 209, 0.801);
+	width: 250px;
+	height: 250px;
+	perspective: 400px;
+
+}
+
+
+.block__item {
+	background: rgb(156, 119, 10);
+	width: 250px;
+	height: 250px;
+
+
+}
+
+.block__item--translate:hover {
+	transform: translate(30px, 30px);
+	transition: all 0.5s ease 0s;
+}
+
+
+.block__item--scale {
+	background: rgb(142, 208, 36);
+
+}
+
+.block__item--scale:hover {
+	transform: scale(0.7, 0.7);
+	transition: all 0.5s ease 0s;
+}
+
+
+.block__item--rotate {
+	background-color: aquamarine;
+}
+
+.block__item--rotate:hover {
+	transform: rotate(55deg);
+	transition: all 0.5s ease 0s;
+}
+
+
+.block__item--skew {
+	background-color: rgb(41, 168, 182);
+}
+
+.block__item--skew:hover {
+	transform: skew(10deg, 10deg);
+	transition: all 1s ease 0s;
+}
+
+.block__item--matrix {
+	background-color: rgba(126, 57, 190, 0.894);
+
+}
+
+
+.block__item--matrix:hover {
+	transform: matrix(1.2, 0.1, 0.1, 0.8, 0, 0) rotate(180deg);
+	transition: all 1s ease 0s;
+}
+
+.block__item--multiple2d {
+	background-color: rgb(29, 142, 255);
+}
+
+.block__item--multiple2d:hover {
+	transform: translate(-10px, -10px) rotate(90deg) scale(0.8, 0.8) skew(10deg, -10deg);
+	transition: all 1s ease 0s;
+}
+
+.block__item--transform-origin {
+	background-color: brown;
+}
+
+
+.block__item--transform-origin:hover {
+	transform-origin: 0 0;
+	transform: rotate(-45deg);
+	transition: all 1s ease 0s;
+}
+
+.block__item--perspective {
+	background-color: darkcyan;
+	perspective: 400px;
+	perspective-origin: center;
+}
+
+.block__item--perspective:hover {
+	transition: all 1s ease 0s;
+	transform: rotateY(60deg) rotatex(30deg);
+
+}
+
+.block__item--translate3d {
+	background-color: darkorange;
+	perspective: 400px;
+}
+
+.block__item--translate3d:hover {
+	transition: all 1s ease 0s;
+	transform: translate3d(-30px, -30px, 50px);
+}
+
+.block__item--scale3d {
+	background-color: deepskyblue;
+	perspective: 400px;
+}
+
+.block__item--scale3d:hover {
+	transition: all 1s ease 0s;
+	transform: scale3d(1.2, 0.8, 1);
+}
+
+.block__item--rotate3d {
+	background-color: darksalmon;
+	perspective: 400px;
+}
+
+.block__item--rotate3d:hover {
+	transition: all 1s ease 0s;
+	transform: rotate3d(1, 1, 1, 90deg);
+}
+
+.block__item--matrix3d {
+	background-color: honeydew;
+
+}
+
+
+.block__item--matrix3d:hover {
+	transition: all 1s ease 0s;
+	transform: matrix3d(0.87, -0.09, 0.50, 0, 0.09, 0.87, 0.50, 0.0006, -0.5, -0.5, 0.7569, 0, 20, 20, 20, 1);
+}
+
+.block__item--multiple3d {
+	background-color: gold;
+	perspective: 400px;
+	perspective-origin: top left;
+}
+
+.block__item--multiple3d:hover {
+	transform: translate3d(20px, 20px, 50px) scale3d(0.5, 0.7, 1.3) rotate3d(1, 1, 1, 60deg);
+	transition: all 1s ease 0s;
+}
+
+
+.block__item--backface-visibility {
+	background-color: darkkhaki;
+	perspective: 400px;
+}
+
+.block__item--backface-visibility:hover {
+	transition: all 1s ease 0s;
+	backface-visibility: hidden;
+	transform: rotateY(200deg);
+}
+
+
+.block__body--transform-style {
+	transform-style: preserve-3d;
+}
+
+.block__item--transform-style {
+	background-color: burlywood;
+
+
+}
+
+
+.block__item--transform-style:hover {
+
+	transition: all 1s ease 0s;
+	transform: rotateY(45deg);
+}
+
+
+
+.car__container {
+	overflow: hidden;
+	perspective: 400px
+}
+
+.car__image {
+	width: 900px;
+	height: 335px;
+	background: url("../img/car.png");
+	transform: scale(0.5, 0.5);
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+
+.car__image:active {
+	transform: rotateY(-120deg);
+	position: relative;
+	transition: all 2.5s ease 0s;
+	left: 1200px;
+}
